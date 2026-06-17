@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef7e8;
+  color: #2f3e2f;
+}
+
+header {
+  background: linear-gradient(135deg, #2e7d32, #8bc34a);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  color: #2e7d32;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 2px solid #8bc34a;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
+#resultado {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#imagemFazenda {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  background: #2e7d32;
+  color: white;
+  padding: 15px;
+}
