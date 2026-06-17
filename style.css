@@ -22,7 +22,7 @@ header p {
 }
 
 main {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 30px auto;
   padding: 10px;
 }
@@ -45,7 +45,7 @@ label {
   font-weight: bold;
 }
 
-input {
+input, select {
   width: 100%;
   padding: 12px;
   margin-top: 5px;
@@ -54,19 +54,29 @@ input {
   font-size: 16px;
 }
 
-button {
+button, .botao-link {
+  display: inline-block;
   margin-top: 20px;
   padding: 12px 20px;
   background: #2e7d32;
   color: white;
+  text-decoration: none;
   border: none;
   border-radius: 8px;
   font-size: 17px;
   cursor: pointer;
 }
 
-button:hover {
+button:hover, .botao-link:hover {
   background: #1b5e20;
+}
+
+.perigo {
+  background: #c62828;
+}
+
+.perigo:hover {
+  background: #8e0000;
 }
 
 #resultado {
@@ -78,13 +88,51 @@ button:hover {
 }
 
 #imagemFazenda {
-  font-size: 50px;
+  font-size: 55px;
   text-align: center;
   margin-top: 20px;
 }
 
-ul {
-  line-height: 1.8;
+.resumo {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.resumo div {
+  flex: 1;
+  min-width: 180px;
+  background: #f1f8e9;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.resumo h3 {
+  font-size: 32px;
+  margin: 0;
+  color: #2e7d32;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th {
+  background: #2e7d32;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f1f8e9;
 }
 
 footer {
@@ -92,4 +140,14 @@ footer {
   background: #2e7d32;
   color: white;
   padding: 15px;
+}
+
+@media (max-width: 700px) {
+  table {
+    font-size: 13px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
 }

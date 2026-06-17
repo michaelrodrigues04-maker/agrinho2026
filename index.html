@@ -7,48 +7,63 @@
 </head>
 <body>
 
-  <header>
-    <h1>🌱 Plantando Descanso, Colhendo Futuro</h1>
-    <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
-  </header>
+<header>
+  <h1>🌱 Plantando Descanso, Colhendo Futuro</h1>
+  <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+</header>
 
-  <main>
-    <section class="card">
-      <h2>😴 Diário do Sono</h2>
+<main>
+  <section class="card">
+    <h2>😴 Diário do Sono do Aluno</h2>
 
-      <label>Que horas você dormiu?</label>
-      <input type="time" id="horaDormiu">
+    <label>Nome do aluno:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome">
 
-      <label>Que horas você acordou?</label>
-      <input type="time" id="horaAcordou">
+    <label>Turma:</label>
+    <input type="text" id="turma" placeholder="Ex: 2º Ano B">
 
-      <button onclick="calcularSono()">Calcular meu descanso</button>
+    <label>Que horas você dormiu?</label>
+    <input type="time" id="horaDormiu">
 
-      <div id="resultado"></div>
-    </section>
+    <label>Que horas você acordou?</label>
+    <input type="time" id="horaAcordou">
 
-    <section class="card">
-      <h2>🚜 Fazenda da Energia</h2>
-      <p id="fazenda">Registre seu sono para ver como sua fazenda ficará.</p>
-      <div id="imagemFazenda">🌾🐄☀️</div>
-    </section>
+    <label>Você usou celular antes de dormir?</label>
+    <select id="celular">
+      <option value="Sim">Sim</option>
+      <option value="Não">Não</option>
+    </select>
 
-    <section class="card">
-      <h2>💡 Dicas para Dormir Melhor</h2>
-      <ul>
-        <li>Evite celular antes de dormir.</li>
-        <li>Tente dormir sempre no mesmo horário.</li>
-        <li>Evite café e refrigerante à noite.</li>
-        <li>Organize sua rotina de estudos.</li>
-        <li>Converse com um professor se estiver muito cansado.</li>
-      </ul>
-    </section>
-  </main>
+    <label>Como você se sente hoje?</label>
+    <select id="energia">
+      <option value="Muito cansado">Muito cansado</option>
+      <option value="Cansado">Cansado</option>
+      <option value="Bem">Bem</option>
+      <option value="Com muita energia">Com muita energia</option>
+    </select>
 
-  <footer>
-    <p>Assim como a terra precisa descansar, nosso corpo também precisa.</p>
-  </footer>
+    <button onclick="salvarRegistro()">Salvar Registro</button>
 
-  <script src="script.js"></script>
+    <div id="resultado"></div>
+  </section>
+
+  <section class="card">
+    <h2>🚜 Fazenda da Energia</h2>
+    <p id="fazenda">Registre seu sono para ver sua fazenda.</p>
+    <div id="imagemFazenda">🌾🐄☀️</div>
+  </section>
+
+  <section class="card">
+    <h2>👨‍🏫 Área dos Professores</h2>
+    <p>A direção e os professores podem acompanhar os registros nesta página:</p>
+    <a class="botao-link" href="professor.html">Acessar Painel do Professor</a>
+  </section>
+</main>
+
+<footer>
+  <p>Assim como a terra precisa descansar, nosso corpo também precisa.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

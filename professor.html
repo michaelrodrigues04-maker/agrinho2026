@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel do Professor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>📊 Painel do Professor</h1>
+  <p>Acompanhamento do sono dos alunos</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Resumo Geral</h2>
+
+    <div class="resumo">
+      <div>
+        <h3 id="totalRegistros">0</h3>
+        <p>Registros</p>
+      </div>
+
+      <div>
+        <h3 id="mediaSono">0h</h3>
+        <p>Média de sono</p>
+      </div>
+
+      <div>
+        <h3 id="alunosAlerta">0</h3>
+        <p>Alunos em alerta</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Registros dos Alunos</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Turma</th>
+          <th>Horas</th>
+          <th>Celular</th>
+          <th>Energia</th>
+          <th>Situação</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaRegistros"></tbody>
+    </table>
+
+    <button class="perigo" onclick="limparRegistros()">Limpar Registros</button>
+    <a class="botao-link" href="index.html">Voltar para área do aluno</a>
+  </section>
+</main>
+
+<footer>
+  <p>Produção sustentável também começa com saúde e descanso.</p>
+</footer>
+
+<script src="professor.js"></script>
+</body>
+</html>
